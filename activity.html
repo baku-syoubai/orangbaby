@@ -1,97 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
 <meta charset="UTF-8">
+
 <style>
 body{
   margin:0;
   font-family:sans-serif;
 }
 
-.banner{
-  background:#fff3cd;
-  padding:15px;
-  text-align:center;
-  border:1px solid #ffeeba;
+/* ===== 横向滑动容器 ===== */
+.slider{
+  display:flex;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  gap:10px;
+  padding:10px;
 }
 
-.banner img{
-  max-width:100%;
+/* 隐藏滚动条（可选） */
+.slider::-webkit-scrollbar{
+  display:none;
 }
 
-.text{
-  font-size:16px;
-  color:#333;
-  margin-top:8px;
+/* 每一张slide */
+.slide{
+  flex:0 0 90%;
+  scroll-snap-align:center;
+  border-radius:8px;
+  overflow:hidden;
+}
+
+/* 图片 */
+.slide img{
+  width:100%;
+  height:auto;
+  display:block;
 }
 </style>
 </head>
+
 <body>
-<div class="container--oeXOl"><div class="flick-view-wrapper--17gvb align-left--37I2r"><div class="spacer--1O71j block--1XPdY padding-bottom-medium--afMsT"><div class="container--SEXQw hidden-arrows--2Rb61"><div class="dots-buffer--1chGE"><div class="container--2h5By global-wrapper--33rrr" style="--slideGap:0"><div class="slick-slider slick-slider--3WINX slick-initialized" dir="ltr"><div role="button" tabindex="0"><div class="arrow--Rp5N8 inner-arrow--2G0-T left--1as1K"><button class="button--1P0_8 size-l--1Q65k size-l-padding--1rbIL border-radius--2FZc6 type-control----9x0 variant-black--1hkTK size-l--13Sso" aria-label="button" type="button"><span class="icon-container--VM50u"><div class="icon--2qUoj size-xxxxl--asy44 color-white--3G1UG element-chevron-left--2owC1"></div></span></button></div></div><div class="slick-list"><div class="slick-track" style="width: 9757px; opacity: 1; transform: translate3d(-887px, 0px, 0px);">
 
-<div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 887px;">
-<div>
-<div class="wrapped-slide--2V2I2" role="button" tabindex="0">
-<div>
-<div class="slide-centered--3Ip1B">
-<a href="https://link.rakuten.co.jp/1/154/420/" class="align-left--37I2r image--1hFo_ slideshow--2-3C6" style="aspect-ratio:960 / 186.82">
-  <img class="image--38eoi  contained--2JIys  hover-opacity-70--2LXmM shoptop-large-banner--2cPjE r-image--2P8HV" src="https://tshop.r10s.jp/orange-baby/cabinet/11434553/bbnr_20251205102808.jpg" alt=""
-></a>
-</div>
-</div>
-</div>
-</div>
-</div>
+<div class="slider">
 
+  <a class="slide" href="https://event.rakuten.co.jp/incentive/ichiba/lottery/24h/20260225100/">
+    <img src="https://tshop.r10s.jp/orange-baby/cabinet/11434553/imgrc0131103029.jpg">
+  </a>
 
-<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 887px;">
-  <div>
-    <div class="wrapped-slide--2V2I2" role="button" tabindex="0">
-      <div>
-        <div class="slide-centered--3Ip1B">
-          <a href="https://event.rakuten.co.jp/incentive/ichiba/lottery/24h/20260225100/" class="align-left--37I2r image--1hFo_ slideshow--2-3C6" style="aspect-ratio:960 / 186.82">
-            <img class="image--38eoi  contained--2JIys  hover-opacity-70--2LXmM shoptop-large-banner--2cPjE r-image--2P8HV" src="https://tshop.r10s.jp/orange-baby/cabinet/11434553/imgrc0131103029.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <a class="slide" href="https://www.rakuten.co.jp/orange-baby/contents/kupon/">
+    <img src="https://tshop.r10s.jp/orange-baby/cabinet/11434553/coupon_sp.jpg">
+  </a>
+
+  <a class="slide" href="https://www.rakuten.co.jp/orange-baby/contents/preschool_2026/">
+    <img src="https://tshop.r10s.jp/orange-baby/cabinet/11434553/bnr_preschool.jpg">
+  </a>
+
+  <a class="slide" href="https://www.rakuten.co.jp/orange-baby/contents/sango/">
+    <img src="https://tshop.r10s.jp/orange-baby/cabinet/11434553/sango_mail.jpg">
+  </a>
+
 </div>
 
-<div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 887px;">
-  <div><div class="wrapped-slide--2V2I2" role="button" tabindex="0">
-    <div>
-      <div class="slide-centered--3Ip1B">
-        <a href="https://www.rakuten.co.jp/orange-baby/contents/kupon/" class="align-left--37I2r image--1hFo_ slideshow--2-3C6" style="aspect-ratio:960 / 186.82">
-          <img class="image--38eoi contained--2JIys hover-opacity-70--2LXmM shoptop-large-banner--2cPjE r-image--2P8HV clip-image--31vHA fade-enter-done--fOnBI" src="https://tshop.r10s.jp/orange-baby/cabinet/11434553/coupon_sp.jpg" alt=""></a></div></div></div></div></div>
-
-<div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 887px;">
-  <div>
-    <div class="wrapped-slide--2V2I2" role="button" tabindex="0"> <div>
-      <div class="slide-centered--3Ip1B"><a href="https://www.rakuten.co.jp/orange-baby/contents/preschool_2026/" class="align-left--37I2r image--1hFo_ slideshow--2-3C6" style="aspect-ratio:960 / 186.82">
-       <img class="image--38eoi contained--2JIys hover-opacity-70--2LXmM shoptop-large-banner--2cPjE r-image--2P8HV clip-image--31vHA fade-enter-done--fOnBI" src="https://tshop.r10s.jp/orange-baby/cabinet/11434553/bnr_preschool.jpg" alt="入園・入学準備特集"></a></div></div></div></div></div>
-
-<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 887px;"><div><div class="wrapped-slide--2V2I2" role="button" tabindex="0"><div>
-  <div class="slide-centered--3Ip1B">
-    <a href="https://www.rakuten.co.jp/orange-baby/contents/sango/" class="align-left--37I2r image--1hFo_ slideshow--2-3C6" style="aspect-ratio:960 / 186.82">
-      <img class="image--38eoi contained--2JIys hover-opacity-70--2LXmM shoptop-large-banner--2cPjE r-image--2P8HV clip-image--31vHA fade-enter-done--fOnBI" src="https://tshop.r10s.jp/orange-baby/cabinet/11434553/sango_mail.jpg" alt="産後特集"></a></div></div></div></div></div>
-
-<div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 887px;"><div><div class="wrapped-slide--2V2I2" role="button" tabindex="0"><div><div class="slide-centered--3Ip1B"><a href="https://link.rakuten.co.jp/1/154/420/" class="align-left--37I2r image--1hFo_ slideshow--2-3C6" style="aspect-ratio:960 / 186.82"><img class="image--38eoi  contained--2JIys  hover-opacity-70--2LXmM shoptop-large-banner--2cPjE r-image--2P8HV" src="https://tshop.r10s.jp/orange-baby/cabinet/11434553/bbnr_20251205102808.jpg" alt=""></a></div></div></div></div></div>
-
-<div data-index="5" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 887px;"><div><div class="wrapped-slide--2V2I2" role="button" tabindex="0"><div><div class="slide-centered--3Ip1B"><a href="https://event.rakuten.co.jp/incentive/ichiba/lottery/24h/20260225100/" class="align-left--37I2r image--1hFo_ slideshow--2-3C6" style="aspect-ratio:960 / 186.82"><img class="image--38eoi  contained--2JIys  hover-opacity-70--2LXmM shoptop-large-banner--2cPjE r-image--2P8HV" src="https://tshop.r10s.jp/orange-baby/cabinet/11434553/imgrc0131103029.jpg" alt=""></a></div></div></div></div></div>
-
-<div data-index="6" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 887px;"><div><div class="wrapped-slide--2V2I2" role="button" tabindex="0"><div><div class="slide-centered--3Ip1B"><a href="https://www.rakuten.co.jp/orange-baby/contents/kupon/" class="align-left--37I2r image--1hFo_ slideshow--2-3C6" style="aspect-ratio:960 / 186.82"><img class="image--38eoi contained--2JIys hover-opacity-70--2LXmM shoptop-large-banner--2cPjE r-image--2P8HV clip-image--31vHA fade-enter-done--fOnBI" src="https://tshop.r10s.jp/orange-baby/cabinet/11434553/coupon_sp.jpg" alt=""></a></div></div></div></div></div>
-
-<div data-index="7" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 887px;"><div><div class="wrapped-slide--2V2I2" role="button" tabindex="0"><div><div class="slide-centered--3Ip1B"><a href="https://www.rakuten.co.jp/orange-baby/contents/preschool_2026/" class="align-left--37I2r image--1hFo_ slideshow--2-3C6" style="aspect-ratio:960 / 186.82"><img class="image--38eoi contained--2JIys hover-opacity-70--2LXmM shoptop-large-banner--2cPjE r-image--2P8HV clip-image--31vHA fade-enter-done--fOnBI" src="https://tshop.r10s.jp/orange-baby/cabinet/11434553/bnr_preschool.jpg" alt="入園・入学準備特集"></a></div></div></div></div></div>
-
-<div data-index="8" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 887px;"><div><div class="wrapped-slide--2V2I2" role="button" tabindex="0"><div><div class="slide-centered--3Ip1B"><a href="https://www.rakuten.co.jp/orange-baby/contents/sango/" class="align-left--37I2r image--1hFo_ slideshow--2-3C6" style="aspect-ratio:960 / 186.82"><img class="image--38eoi contained--2JIys hover-opacity-70--2LXmM shoptop-large-banner--2cPjE r-image--2P8HV clip-image--31vHA fade-enter-done--fOnBI" src="https://tshop.r10s.jp/orange-baby/cabinet/11434553/sango_mail.jpg" alt="産後特集"></a></div></div></div></div></div>
-
-<div data-index="9" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 887px;"><div><div class="wrapped-slide--2V2I2" role="button" tabindex="0"><div><div class="slide-centered--3Ip1B"><a href="https://link.rakuten.co.jp/1/154/420/" class="align-left--37I2r image--1hFo_ slideshow--2-3C6" style="aspect-ratio:960 / 186.82"><img class="image--38eoi  contained--2JIys  hover-opacity-70--2LXmM shoptop-large-banner--2cPjE r-image--2P8HV" src="https://tshop.r10s.jp/orange-baby/cabinet/11434553/bbnr_20251205102808.jpg" alt=""></a></div></div></div></div></div>
-
-</div></div>
-
-
-  
 </body>
-  
 </html>
